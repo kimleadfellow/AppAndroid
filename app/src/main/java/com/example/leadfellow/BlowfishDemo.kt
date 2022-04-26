@@ -31,8 +31,9 @@ class BlowfishDemo {
         val KS = SecretKeySpec(KeyData, "Blowfish")
         val cipher = Cipher.getInstance("Blowfish")
         cipher.init(Cipher.ENCRYPT_MODE, KS)
-        return Base64.getEncoder()
-            .encodeToString(cipher.doFinal(password.toByteArray(charset("UTF-8"))))
+        val encrypted = cipher.doFinal(password.toByteArray())
+
+        return String(encrypted)
     }
 
     @Throws(
@@ -57,8 +58,8 @@ class BlowfishDemo {
         @Throws(Exception::class)
         @JvmStatic
         fun main(args: Array<String>) {
-            val password = "Knf@123"
-            val key = "knowledgefactory"
+            val password = "admin"
+            val key = "abc"
             println("Password: $password")
             val obj = BlowfishDemo()
             val enc_output = obj.encrypt(password, key)

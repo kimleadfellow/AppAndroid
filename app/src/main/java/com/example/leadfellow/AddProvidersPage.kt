@@ -1,23 +1,17 @@
 package com.example.leadfellow
 
 import android.annotation.SuppressLint
-import android.app.ActionBar
 import android.content.Context
 import android.content.Intent
-import android.icu.lang.UCharacter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
-import androidx.core.view.marginTop
 
-class AddProviders : AppCompatActivity() {
+class AddProvidersPage : AppCompatActivity() {
     private var providerField : ScrollView? = null
     private var providerLayout : LinearLayout? = null
     private var addProviderButton : Button? = null
@@ -25,7 +19,7 @@ class AddProviders : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_providers)
+        setContentView(R.layout.activity_add_providerspage)
         providerField = findViewById(R.id.providerField) as ScrollView
 
         providerField!!.setOnTouchListener(object : OnSwipeTouchListener(applicationContext){
@@ -50,7 +44,7 @@ class AddProviders : AppCompatActivity() {
     }
 
     fun swipeScreen(){
-        val intent = Intent(this, Leadinfo::class.java)
+        val intent = Intent(this, LeadInfoPage::class.java)
         startActivity(intent)
     }
 }
