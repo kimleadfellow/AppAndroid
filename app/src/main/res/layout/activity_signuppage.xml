@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/lfbg"
-    tools:context=".Signup"
+    tools:context=".SignUpPage"
     tools:layout_editor_absoluteX="33dp"
     tools:layout_editor_absoluteY="-16dp">
 
@@ -133,20 +133,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.593" />
-
-        <ImageButton
-            android:id="@+id/buttonBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/homeAsUpIndicator"
-            android:onClick="goBack"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.073"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.125"
-            app:srcCompat="?attr/homeAsUpIndicator" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

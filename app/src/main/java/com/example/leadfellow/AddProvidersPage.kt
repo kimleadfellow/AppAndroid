@@ -15,19 +15,12 @@ class AddProvidersPage : AppCompatActivity() {
     private var providerField : ScrollView? = null
     private var providerLayout : LinearLayout? = null
     private var addProviderButton : Button? = null
+    private var leadInfoButton : Button? = null
     private var providerCount = 0
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_providerspage)
-        providerField = findViewById(R.id.providerField) as ScrollView
-
-        providerField!!.setOnTouchListener(object : OnSwipeTouchListener(applicationContext){
-            override fun onSwipeLeft(){
-                swipeScreen()
-            }
-        })
-
         providerLayout = findViewById(R.id.providerLayout)
 
 
@@ -43,7 +36,7 @@ class AddProvidersPage : AppCompatActivity() {
         providerLayout!!.addView(rowView, providerLayout!!.childCount - 1)
     }
 
-    fun swipeScreen(){
+    fun leadInfo(view: View){
         val intent = Intent(this, LeadInfoPage::class.java)
         startActivity(intent)
     }

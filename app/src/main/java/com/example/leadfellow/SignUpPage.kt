@@ -16,10 +16,6 @@ class SignUpPage : AppCompatActivity() {
 
         }
     }
-    fun goBack(view: View){
-        val intent= Intent(this, SignInPage::class.java)
-        startActivity(intent)
-    }
     fun signup(){
         //Lisada registreerimine andmebaasiga
         val intent= Intent(this, SignInPage::class.java)

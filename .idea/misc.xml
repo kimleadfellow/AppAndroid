@@ -12,10 +12,15 @@
         <entry key="app/src/main/res/drawable/backborder.xml" value="0.103125" />
         <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.103125" />
         <entry key="app/src/main/res/layout/activity_add_providers.xml" value="9.131059268394305" />
+        <entry key="app/src/main/res/layout/activity_add_providerspage.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_forgot_passwordpage.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_leadinfo.xml" value="0.18620826062456228" />
+        <entry key="app/src/main/res/layout/activity_leadinfopage.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.38550914573369055" />
+        <entry key="app/src/main/res/layout/activity_signinpage.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1353252982910913" />
+        <entry key="app/src/main/res/layout/activity_signuppage.xml" value="0.22" />
         <entry key="app/src/main/res/layout/newprovider.xml" value="0.10126582278481013" />
       </map>
     </option>

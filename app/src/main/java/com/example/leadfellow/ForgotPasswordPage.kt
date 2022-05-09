@@ -10,7 +10,7 @@ class ForgotPasswordPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_passwordpage)
     }
-    fun onChangeScreen(view: View){
+    fun submit(view: View){
         val intent = Intent(this, SignInPage::class.java)
         startActivity(intent)
     }

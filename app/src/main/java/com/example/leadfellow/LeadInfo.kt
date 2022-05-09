@@ -1,14 +1,14 @@
 package com.example.leadfellow
 
 class LeadInfo {
-    private var token: String = "";
-    private var company: String = "";
-    private var person_first: String = "";
-    private var person_last: String = "";
-    private var phone: String = "";
-    private var phone_area_code: String = "";
-    private var email: String = "";
-    private var info: String = "";
-    private var commission: String = "";
-    private var provider_emails: Array<String> = arrayOf<String>();
+    var token: String = "";
+    var company: String = "";
+    var person_first: String = "";
+    var person_last: String = "";
+    var phone: String = "";
+    var phone_area_code: String = "";
+    var email: String = "";
+    var info: String = "";
+    var commission: String = "";
+    var provider_emails: Array<String> = arrayOf<String>();
 }

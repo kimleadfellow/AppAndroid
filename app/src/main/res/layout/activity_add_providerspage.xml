@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="10dp"
     android:background="@color/lfbg"
-    tools:context=".AddProviders">
+    tools:context=".AddProvidersPage">
 
     <LinearLayout
         android:id="@+id/addProvidersPage"
@@ -32,7 +32,7 @@
         <ScrollView
             android:id="@+id/providerField"
             android:layout_width="wrap_content"
-            android:layout_height="492dp"
+            android:layout_height="422dp"
             android:background="@color/lfbg">
 
             <LinearLayout
@@ -40,8 +40,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <include
                     layout="@layout/newprovider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp" />
             </LinearLayout>
         </ScrollView>
@@ -56,6 +59,18 @@
             android:text="@string/add_provider"
             android:textColor="@color/lfbg"
             android:onClick="onAddField"/>
+
+        <Button
+            android:id="@+id/leadInfoButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="leadInfo"
+            android:paddingTop="0dp"
+            android:text="@string/lead_info"
+            android:textColor="@color/lfbg" />
 
     </LinearLayout>
 

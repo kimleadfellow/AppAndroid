@@ -16,4 +16,10 @@
     <string name="company">Company</string>
     <string name="additional_info">Additional info</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="goback">go back</string>
+    <string name="Submit">Submit</string>
+    <string name="Leadinfo">Lead Info</string>
+    <string name="Sendlead">Send Lead</string>
+    <string name="commission">Commission</string>
+    <string name="lead_info">Lead Info</string>
 </resources>
